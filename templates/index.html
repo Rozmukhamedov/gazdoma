@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div style="position: relative; overflow: hidden;">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="{% static 'images/logo.svg' %}" alt="ГазДома"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Комплекты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Как это работает</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Вопрос-ответ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Инструкция</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item phone">
+                                <span>Телефон</span>
+                                <a class="nav-link" href="#">+7 (123) 456-78-90</a>
+                            </li>
+                            <li class="nav-item personal-account">
+                                <a class="nav-link" href="#">Личный кабинет</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Рус
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark"
+                                    aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Русский язык</a></li>
+                                    <li><a class="dropdown-item" href="#">Английский язык</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="elipse_background_1"></div>
+        <div class="elipse_background_2"></div>
+        <div class="info_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="images">
+                            <img class="ellipse-1" src="{% static 'images/header/Ellipse 22.png' %}" alt="">
+                            <img class="ellipse-2" src="{% static 'images/header/Ellipse 24.png' %}" alt="">
+                            <img class="ellipse-3" src="{% static 'images/header/Ellipse 26.png' %}" alt="">
+                            <img class="ellipse-4" src="{% static 'images/header/Ellipse 28.png' %}" alt="">
+                            <div class="image-1">
+                                <img src="{% static 'images/header/image 5-1.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Датчики</p>
+                            </div>
+                            <div class="image-2">
+                                <img src="{% static 'images/header/image 5-2.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Пульт Д/У</p>
+                            </div>
+
+                            <div class="image-3">
+                                <img src="{% static 'images/header/image 5-3.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Радиореле</p>
+                            </div>
+                            <div class="image-4">
+                                <img src="{% static 'images/header/image 5-4.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Радиомодуль</p>
+                            </div>
+                            <div class="image-5">
+                                <img src="{% static 'images/header/image 5-5.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Умный дом</p>
+                            </div>
+                            <div class="image-6">
+                                <img src="{% static 'images/header/image 5.png' %}" alt="">
+                                <img class="ellipse" src="{% static 'images/background/Ellipse 10.png' %}" alt="">
+                                <p>Радиовыключатели</p>
+                            </div>
+
+                            <img class="vector-1" src="{% static 'images/header/Vector 6.png' %}" alt="">
+                            <img class="vector-2" src="{% static 'images/header/Vector 7.png' %}" alt="">
+                            <img class="vector-3" src="{% static 'images/header/Vector 8.png' %}" alt="">
+                            <img class="vector-4" src="{% static 'images/header/Vector 9.png' %}" alt="">
+                            <img class="vector-5" src="{% static 'images/header/Vector 10.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <h1>Подключите все модули
+                            в пару кликов</h1>
+                        <h3>Выберите готовое решение для себя
+                            или соберите индивидуальный комплект</h3>
+                        <button type="button" class="btn btn-lg">Подключить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <div class="container">
+                <div class="sets_text">
+                    <h5 class="standard">Коплект «Стандарт»</h5>
+                    <h5 class="advanced">Коплект «Расширенный»</h5>
+                    <h5 class="standard">Коплект «Стандарт»</h5>
+                </div>
+                <div class="information_card">
+                    <div class="elipse_background"></div>
+                    <div class="row">
+                        <div class="col-7">
+                            <img src="{% static 'images/information-product.png' %}" alt="info_product">
+                        </div>
+                        <div class="col-5">
+                            <h4>Коплект «Расширенный»</h4>
+                            <h3>10 490 ₽</h3>
+                            <button type="button" class="btn btn-lg">Добавить в корзину</button>
+                            <ul>
+                                <li>1х Датчик газа</li>
+                                <li>1х Датчик воды</li>
+                                <li>1х Датчик света</li>
+                                <li>3х Маршрутизатор</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app">
+            <div class="elipse_background"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Скачайте приложение «ГазДома»</h5>
+                        <p>Настройте персональные сценарии управления <br> устройствами и получайте моментальные <br>
+                            уведомления
+                        </p>
+                        <div class="app_download">
+                            <a href="#">
+                                <img class="app_story" src="{% static 'images/App Store.png' %}" alt="app story">
+                            </a>
+                            <a href="#">
+                                <img class="play_market" src="{% static 'images/Google Play.png' %}" alt="play market">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="{% static 'images/iPhone 12 Pro (Wooden Hands).png' %}" alt="iphone 12">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="position: relative; overflow: hidden;">
+            <div class="container">
+                <div class="video">
+                    <h4>Как работает система ГазДома</h4>
+                    <div class="wrapper">
+                        <div class="video-youtube video-youtube_overlay">
+                            <div id="video-youtube__content"
+                                class="video-youtube__content video-youtube__content_hide-origin-play-btn"></div>
+                            <!-- <button type="button" class="video-youtube__new-play-btn">
+                                <span>Воспроизвести</span>
+                            </button> -->
+                            <!-- <div id="video_image" class="video_image"></div> -->
+                        </div>
+                    </div>
+                    <div type="button" class="btn btn-lg">Ознакомиться с инструкцией подключения</div>
+                </div>
+                <div class="feedback">
+                    <div class="elipse_background"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="feedback_form">
+                                <h5>Оставьте заявку на подключение</h5>
+                                <p>Мы поможем с выбором комплекта</p>
+                                <div class="mb-1">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Телефон">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input btn-outline-primary"
+                                        id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Я принимаю условия обработки
+                                        персональных данных</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Оставить заявку</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="photos">
+                                <img class="img-1" src="{% static 'images/feedback/image 6.png' %}" alt="image 1">
+                                <img class="img-2" src="{% static 'images/feedback/image 6-1.png' %}" alt="image 2">
+                                <img class="img-3" src="{% static 'images/feedback/image 6-2.png' %}" alt="image 3">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="certificate">
+                    <h5>Сертификаты</h5>
+                    <div class="images">
+                        <img class="image-1" src="{% static 'images/certificate/image 10.png' %}" alt="certificate_1">
+                        <img class="image-2" src="{% static 'images/certificate/image 10.png' %}" alt="certificate_2">
+                        <img class="image-3" src="{% static 'images/certificate/image 10.png' %}" alt="certificate_3">
+                    </div>
+                    <div class="elipse_background"></div>
+                </div>
+                <div class="question_answer">
+                    <h3>Вопрос-ответ</h3>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Что такое ГазДома
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Позовите Алису и попросите выполнить нужное действие с устройством: включить или
+                                    выключить, поменять цвет или яркость, перевести в другой режим работы и т. д. Чтобы
+                                    посмотреть список поддерживаемых команд нажмите на устройство в приложении Дом с
+                                    Алисой. Доступные команды отображаются на вкладке Голосовые команды.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Как управлять датчиками
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Позовите Алису и попросите выполнить нужное действие с
+                                    устройством: включить или выключить, поменять цвет или яркость, перевести в другой
+                                    режим работы и т. д. Чтобы посмотреть список поддерживаемых команд нажмите на
+                                    устройство в приложении Дом с Алисой. Доступные команды отображаются на вкладке
+                                    Голосовые команды.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Зачем нужен контроллер
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Позовите Алису и попросите выполнить нужное действие с
+                                    устройством: включить или выключить, поменять цвет или яркость, перевести в другой
+                                    режим работы и т. д. Чтобы посмотреть список поддерживаемых команд нажмите на
+                                    устройство в приложении Дом с Алисой. Доступные команды отображаются на вкладке
+                                    Голосовые команды.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Зачем нужен контроллер
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Позовите Алису и попросите выполнить нужное действие с
+                                    устройством: включить или выключить, поменять цвет или яркость, перевести в другой
+                                    режим работы и т. д. Чтобы посмотреть список поддерживаемых команд нажмите на
+                                    устройство в приложении Дом с Алисой. Доступные команды отображаются на вкладке
+                                    Голосовые команды.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elipse_background_3"></div>
+            <div class="elipse_background_4"></div>
+        </div>
+
+        <div class="contacts">
+            <div class="container">
+                <h4>Контакты</h4>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div id="googleMap" style="width: 710px; height: 443px; border-radius: 20px; z-index: 5;"></div>
+                    </div>
+                    <div class="col-md-5 right">
+                        <div class="email social_media">
+                            <img src="{% static 'images/social media/Frame 88.png' %}" alt="email">
+                            <p>gas@home.com</p>
+                        </div>
+                        <div class="telephone social_media">
+                            <img src="{% static 'images/social media/Frame 89.png' %}" alt="telephone">
+                            <p>+7 (999) 000 21-21</p>
+                        </div>
+                        <div class="address social_media">
+                            <img src="{% static 'images/social media/Frame 90.png' %}" alt="address">
+                            <p>129110, г. Москва, Проспект мира, <br> дом 70, э 1А, пом. III, к. 3, оф. 9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elipse_background"></div>
+        </div>
+        <div class="footer">
+            <img src="{% static 'images/logo.svg' %}" alt="GazDoma">
+            <div class="text">
+                <a href="#">Политика конфидециальности</a>
+                <a href="#">Условия использования</a>
+            </div>
+            <div class="map_download">
+                <a href="#">
+                    <img src="{% static 'images/App Store.png' %}" alt="app story">
+                </a>
+                <a href="#">
+                    <img src="{% static 'images/Google Play.png' %}" alt="play market">
+                </a>
+            </div>
+            <div class="elipse_background"></div>
+        </div>
+    </div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/javascript.js' %}"></script>
+</body>
+
+</html>
