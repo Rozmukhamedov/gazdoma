@@ -937,6 +937,11 @@ select {
   padding-bottom: 69px;
 }
 
+.contacts .google_maps {
+  width: 100%;
+  height: auto;
+}
+
 .contacts .elipse_background {
   position: absolute;
   width: 723px;
